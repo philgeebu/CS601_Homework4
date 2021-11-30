@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="alertContent">
+        <p id="alertMessage">Please enter information...</p>
+    </div>
+    <div id="mainContent">
+        <h1>Assignment 4</h1>
+        <form id="mainForm" action="https://bucs601.com/submit.php" method="post">
+            <fieldset>
+                <legend>Info:</legend>
+                <label for="firstName">First name:</label><br>
+                <input type="text" id="firstName" name="firstName" minlength="2" pattern="[A-Za-z]+" required><br>
+                <br>
+                <label for="lastName">Last name:</label><br>
+                <input type="text" id="lastName" name="lastName" minlength="2" pattern="[A-Za-z]+" required><br>
+                <br>
+                <label for="facilitator">Facilitator:</label><br>
+                <input type="text" id="facilitator" name="facilitator" minlength="2" pattern="[A-Za-z]+" required><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Skill level:</legend>
+                <input type="radio" id="skill1" name="skill" value="beginner">
+                <label for="skill1">Beginner</label><br>
+                <input type="radio" id="skill2" name="skill" value="intermediate" checked>
+                <label for="skill2">Intermediate</label><br>
+                <input type="radio" id="skill3" name="skill" value="advanced">
+                <label for="skill3">Advanced</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>OS familiarity:</legend>
+                <input type="checkbox" id="os1" name="os1" value="pc">
+                <label for="os1">PC</label><br>
+                <input type="checkbox" id="os2" name="os2" value="mac">
+                <label for="os2">Mac</label><br>
+                <input type="checkbox" id="os3" name="os3" value="linux">
+                <label for="os4">Linux</label><br>
+            </fieldset>
+            <br>
+            <input type="submit" id="submitButton" value="Send!">
+        </form>
+    </div>
+</body>
+
+</html>

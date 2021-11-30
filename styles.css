@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+#alertContent {
+    text-align: center;
+    width: 100%;
+}
+
+#errorMessage {
+    color: red;
+}
+
+#mainContent {
+    max-width: 325px;
+    margin: 0 auto;
+}
+
+#submitButton {
+    background-image: linear-gradient(darkgreen, green);
+    border: none;
+    border-radius: 7px;
+    color: blanchedalmond;
+    padding: 1em;
+    box-shadow: 3px 3px 7px grey;
+}
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+
+fieldset {
+    padding: 1em 1.5em 1.5em;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 3px 3px 7px grey;
+}
+
+legend {
+    color: darkgreen;
+    font-size: 1.2rem;
+    padding: .4em .6em;
+    background-image: linear-gradient(lightgreen, white, white);
+    border-radius: 7px;
+}
+
+input[type=text] {
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid black;
+    width: calc(100% - .4em);
+    padding: .3em;
+}
+
+.wrongInputField {
+    box-shadow: 0px 0px 3px 1px red;
+}
